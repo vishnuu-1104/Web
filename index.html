@@ -3,12 +3,14 @@
 <head>
 <title>Log in</title>
 <link rel="stylesheet" href="styles.css">
+<script src="formValidation.js"defer></script>
+
 </head>
 <body>
     <img src="Screenshot 2024-01-19 150039.png" class="background-image">
 <div class="login-container">
     <h1>Log in to Your Account</h1>
-        <form action="CV.html">
+        <form action="CV.html" onsubmit="return validateLoginForm()">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username"><br><br>
         <label for="password">Password:</label>
